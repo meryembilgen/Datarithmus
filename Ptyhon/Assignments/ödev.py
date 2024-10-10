@@ -5,7 +5,7 @@ def main():
         giris = input("Öğrenci numarası ve not girin, 'q' ile çıkın, 'all' ile tümünü görüntüleyin, 'print OgrenciNo' ile tüm notları görüntüleyin: ")
 
         if giris == 'q':
-            print("Program sonlandırılıyor...")
+            print("Program sonlandırıldı.")
             break
         
         elif giris == 'all':
