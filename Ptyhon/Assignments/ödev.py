@@ -2,7 +2,7 @@ def main():
     not_defteri = {}
 
     while True:
-        giris = input("Öğrenci numarası ve not girin veya 'q' ile çıkın, 'all' ile listele, 'print OgrenciNo' ile notları görüntüle: ")
+        giris = input("Öğrenci numarası ve not girin, 'q' ile çıkın, 'all' ile tümünü görüntüleyin, 'print OgrenciNo' ile tüm notları görüntüleyin: ")
 
         if giris == 'q':
             print("Program sonlandırılıyor...")
@@ -23,7 +23,7 @@ def main():
                 else:
                     print(f"{ogrenci_no} nolu öğrenci bulunamadı.")
             except ValueError:
-                print("Yanlış komut formatı. 'print OgrenciNo' şeklinde girmelisiniz.")
+                print("Yanlış komut. 'print OgrenciNo' şeklinde girmelisiniz.")
         
         else:
             try:
@@ -37,7 +37,7 @@ def main():
 
                 print(f"{ogrenci_no} nolu öğrencinin tüm notları = {not_defteri[ogrenci_no]}")
             except ValueError:
-                print("Yanlış giriş formatı. Örnek: 123 50")
+                print("Yanlış giriş. Örnek: 123 50")
 
 if __name__ == "__main__":
     main()
